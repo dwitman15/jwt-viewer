@@ -1,65 +1,13 @@
 package com.witman.jwt.token.claims;
 
-import org.apache.commons.lang3.EnumUtils;
-
 import java.util.Set;
 
-public enum PublicClaims {
-    NAME,
-    GIVEN_NAME,
-    FAMILY_NAME,
-    MIDDLE_NAME,
-    NICKNAME,
-    PREFERRED_USERNAME,
-    PROFILE,
-    PICTURE,
-    WEBSITE,
-    EMAIL,
-    EMAIL_VERIFIED,
-    GENDER,
-    BIRTHDATE,
-    ZONEINFO,
-    LOCALE,
-    PHONE_NUMBER,
-    PHONE_NUMBER_VERIFIED,
-    ADDRESS,
-    UPDATED_AT,
-    AZP,
-    NONCE,
-    AUTH_TIME,
-    AT_HASH,
-    C_HASH,
-    ACR,
-    AMR,
-    SUB_JWK,
-    CNF,
-    SIP_FROM_TAG,
-    SIP_DATE,
-    SIP_CALLID,
-    SIP_CSEQ_NUM,
-    SIP_VIA_BRANCH,
-    ORIG,
-    DEST,
-    MKY,
-    EVENTS,
-    TOE,
-    TXN,
-    RPH,
-    SID,
-    VOT,
-    VTM,
-    ATTEST,
-    ORIGID,
-    ACT,
-    SCOPE,
-    CLIENT_ID,
-    MAY_ACT,
-    JCARD,
-    AT_USE_NBR,
-    DIV,
-    OPT;
+public class PublicClaims {
+    public static final Set<String> CLAIMS = Set.of("name", "given_name", "family_name", "middle_name", "nickname",
+            "preferred_username", "profile", "picture", "website", "email", "email_verified", "gender", "birthdate",
+            "zoneinfo", "locale", "phone_number", "phone_number_verified", "address", "updated_at", "azp", "nonce",
+            "auth_time", "at_hash", "c_hash", "acr", "amr", "sub_jwk", "cnf", "sip_from_tag", "sip_date", "sip_callid",
+            "sip_cseq_num", "sip_via_branch", "orig", "dest", "mky", "events", "toe", "txn", "rph", "sid", "vot", "vtm",
+            "attest", "origid", "act", "scope", "client_id", "may_act", "jcard", "at_use_nbr", "div", "opt");
 
-    public static Set<String> claims() {
-        return EnumUtils.getEnumMap(PublicClaims.class).keySet();
-    }
 }

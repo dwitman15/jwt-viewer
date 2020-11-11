@@ -1,19 +1,8 @@
 package com.witman.jwt.token.claims;
 
-import org.apache.commons.lang3.EnumUtils;
-
 import java.util.Set;
 
-public enum RegisteredClaims {
-    ISS,
-    SUB,
-    AUD,
-    EXP,
-    NBF,
-    IAT,
-    JTI;
+public class RegisteredClaims {
+    public static final Set<String> CLAIMS = Set.of("iss", "sub", "aud", "exp", "nbf", "iat", "jti");
 
-    public static Set<String> claims() {
-        return EnumUtils.getEnumMap(RegisteredClaims.class).keySet();
-    }
 }

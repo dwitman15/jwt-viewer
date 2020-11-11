@@ -5,7 +5,7 @@ import java.util.Map;
 import java.util.Set;
 
 public class TokenHeader {
-    static final Set<String> STANDARD_FIELDS = Set.of("alg", "type");
+    public static final Set<String> STANDARD_FIELDS = Set.of("alg", "typ");
 
     private Map<String, Object> entries = new HashMap<>();
 
