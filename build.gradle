@@ -3,5 +3,9 @@ repositories {
 }
 
 subprojects {
+    repositories {
+        jcenter()
+    }
+
     apply plugin: 'java-library'
 }
