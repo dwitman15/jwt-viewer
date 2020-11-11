@@ -1,0 +1,15 @@
+plugins {
+    id 'application'
+    id 'org.openjfx.javafxplugin' version '0.0.8'
+}
+
+dependencies {
+    implementation project(':token')
+}
+
+javafx {
+    version = "15.0.1"
+    modules = [ 'javafx.controls' ]
+}
+
+mainClassName = 'com.witman.jwt.viewer.application.TokenViewer'
