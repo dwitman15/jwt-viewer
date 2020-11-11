@@ -1,4 +1,4 @@
-package com.witman.jwt.token;
+package com.witman.jwt.token.model;
 
 public class TokenSignature {
     private String signature;

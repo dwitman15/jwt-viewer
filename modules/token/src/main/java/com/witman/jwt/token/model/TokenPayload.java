@@ -1,4 +1,4 @@
-package com.witman.jwt.token;
+package com.witman.jwt.token.model;
 
 import com.witman.jwt.token.claims.ClaimsValidator;
 import com.witman.jwt.token.claims.PublicClaims;

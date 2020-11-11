@@ -1,4 +1,4 @@
-package com.witman.jwt.token;
+package com.witman.jwt.token.model;
 
 import java.util.HashMap;
 import java.util.Map;
